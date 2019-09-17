@@ -1,0 +1,106 @@
+.nav-link{
+  color: black;
+}
+.nav-link:hover{
+  color: #00d2b4;
+}
+.active{
+  color: #00d2b4;
+}
+h1 span{
+  text-align: center;
+  color: #00d2b4;
+}
+@media only screen and (max-width: 768px) {
+  .main-nav {
+    display: none;
+  }
+}
+div.menu-movil {
+  width: 50px;
+  display: block;
+  float: right;
+  text-align: right;
+  margin-top: 10px;
+  padding-right: 10px;
+}
+div.menu-movil:hover {
+  cursor: pointer;
+}
+div.menu-movil span {
+  height: 8px;
+  margin-bottom: 6px;
+  background-color: black;
+  display: block;
+}
+@media only screen and (min-width: 768px) {
+  nav{
+    text-align: center;
+  }
+  div.menu-movil {
+    display: none;
+  }
+}
+
+/* Hero */
+.hero-right img{
+  width: 100%;
+}
+.btn{
+  color: white;
+  background-color: #00d2b4;
+  border-radius: 30px;
+}
+
+/* Features */
+.features{
+  background-color: #f6f6f6;
+}
+.feature-item{
+  margin: 10px;
+  padding: 20px;
+}
+.icon-wrapper{
+  width: 30px;
+  height: 30px;
+  margin: 10px 0;
+  background-color: #00d2b4;
+  text-align: center;
+  border-radius: 100%;
+}
+.feature-item span{
+  color: #00d2b4;
+}
+.icon-wrapper i{
+  color: white;
+}
+
+/* Prototypes */
+.proto-left img{
+  width: 100%;
+}
+.proto-icons-wrapper{
+  margin: 30px 0;
+}
+.proto-info i{
+  color: #00d2b4;
+  margin-right: 15px;
+}
+.proto-card{
+  padding: 30px;
+}
+.proto-card img{
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}
+.name-wrapper{
+  margin-left: 20px;
+}
+.name-wrapper p{
+  font-weight: bold;
+  line-height: 0%;
+}
+.description{
+  margin-top: 20px;
+}
