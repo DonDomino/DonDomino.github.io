@@ -1,3 +1,14 @@
+/* Globales */
+.container{
+  padding: 50px;
+}
+.btn{
+  color: white;
+  background-color: #00d2b4;
+  border-radius: 30px;
+}
+
+/* Nav */
 .nav-link{
   color: black;
 }
@@ -46,11 +57,6 @@ div.menu-movil span {
 .hero-right img{
   width: 100%;
 }
-.btn{
-  color: white;
-  background-color: #00d2b4;
-  border-radius: 30px;
-}
 
 /* Features */
 .features{
@@ -67,6 +73,9 @@ div.menu-movil span {
   background-color: #00d2b4;
   text-align: center;
   border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .feature-item span{
   color: #00d2b4;
@@ -103,4 +112,23 @@ div.menu-movil span {
 }
 .description{
   margin-top: 20px;
+}
+
+/* About */
+.about{
+  background-color: #f6f6f6;
+}
+.about-left img{
+  width: 80%;
+}
+
+/* Testimonials */
+
+/* Contact */
+.contact-form{
+  background-color: #f6f6f6;
+}
+.form{
+  width: 60%;
+  background-color: white;
 }
