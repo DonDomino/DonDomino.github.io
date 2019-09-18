@@ -55,23 +55,31 @@ h5{
 }
 /* Nav */
 nav{
-  margin-bottom: 5px;
   padding: 5px;
   background-color: white;
 }
-.nav-link{
+.navbar-brand h4{
+  font-size: 2rem;
+  font-weight: 600;
+}
+.navbar-toggler{
+  border: none;
+}
+.navbar-toggler span{
+  font-size: 2rem;
   color: black;
 }
-.nav-link:hover{
-  color: #00d2b4;
+.nav-link{
+  color: black!important;
+}
+.nav-link:hover, .nav-item:hover{
+  color: #00d2b4!important;
 }
 .active{
-  color: #00d2b4;
+  color: #00d2b4!important;
 }
-@media only screen and (max-width: 768px) {
-  .main-nav {
-    display: none;
-  }
+.main-nav {
+  display: none;
 }
 div.menu-movil {
   width: 50px;
@@ -92,21 +100,31 @@ div.menu-movil span {
 }
 @media only screen and (min-width: 768px) {
   nav{
+    margin-bottom: 5px;
     text-align: center;
   }
-  div.menu-movil {
+  .navbar {
     display: none;
+  }
+  .main-nav {
+    display: flex;
   }
 }
 
 /* Title */
 nav + h4{
+  display: none;
   margin-bottom: 0;
   background-color: white;
 }
 h4 span{
   text-align: center;
   color: #00d2b4;
+}
+@media only screen and (min-width: 768px) {
+  nav + h4{
+    display: block;
+  }
 }
 
 /* Hero */
@@ -139,6 +157,12 @@ h4 span{
   margin: 20px;
   padding: 30px;
   border: none;
+}
+.feature-item a{
+  text-decoration: none;
+}
+.feature-item span:hover{
+  color: #7f7f7f;
 }
 .icon-wrapper{
   width: 50px;
@@ -193,6 +217,9 @@ h4 span{
 .about{
   background-color: #f6f6f6;
 }
+.about-left{
+  margin: 20px auto;
+}
 .about-left img{
   width: 100%;
   border-radius: 5px;
@@ -206,13 +233,47 @@ h4 span{
 }
 
 /* Testimonials */
+.testimonials h1{
+  margin-bottom: 10px;
+}
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #dde1e5;
+}
+.carousel-indicators .active{
+  background-color: #00d2b4;
+}
+.testimonial-wrapper{
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.carousel-item p{
+  color: #7f7f7f;
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: center;
+}
+.carousel-item span{
+  margin: 20px 0 30px 0;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+}
 .testimonial-pic{
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 .testimonial-pic img{
   width: 100%;
   border-radius: 100%;
+  box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.5);
 }
 
 /* Contact */
@@ -241,3 +302,5 @@ form{
     padding: 100px 0 30px 0;
   }
 }
+
+/* Media Queries */
