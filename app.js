@@ -1,4 +1,5 @@
 const contentLoad = (async () => {
+  new WOW().init();
 
 	const loadTestimonials = async (url) => {
 		try {
@@ -32,12 +33,10 @@ const contentLoad = (async () => {
 	const posts = await loadTestimonials("https://jsonplaceholder.typicode.com/posts");
   const pics = [ "./images/person_1.jpg", "./images/person_2.jpg", "./images/person_3.jpg", "./images/person_4.jpg" ];
 
-  for(let i = 0; i < 4; i++){
-    for(let j = 0; j < 4; j++){
-      if(posts[i*10].userId === users[j].id){
-        render(users[j].name, posts[j*10].body, pics[j]);
-      }  
-    }      
+  for(let i = 0; i < 4; i++){    
+    if(posts[i*10].userId === users[i].id){
+      render(users[i].name, posts[i*10].body, pics[i]);
+    }            
   }
 
   document.querySelector('.carousel-inner').firstElementChild.classList.add('active');

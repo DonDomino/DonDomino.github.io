@@ -13,9 +13,12 @@
   color: white;
   background-color: #00d2b4;
   border-radius: 30px;
+  font-size: 1rem;
   font-weight: 700;
+  text-transform: none;
 }
 body{
+  padding-top: 70px;
   background-color: #f6f6f6;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
@@ -33,6 +36,9 @@ h5{
   font-weight: bold;
 }
 @media only screen and (min-width: 768px) {
+  body{
+    padding-top: 40px;
+  }
   h1{
     margin-bottom: 100px;
     font-size: 3rem;
@@ -58,6 +64,9 @@ nav{
   padding: 5px;
   background-color: white;
 }
+.navbar{
+  box-shadow: none;
+}
 .navbar-brand h4{
   font-size: 2rem;
   font-weight: 600;
@@ -80,23 +89,6 @@ nav{
 }
 .main-nav {
   display: none;
-}
-div.menu-movil {
-  width: 50px;
-  display: block;
-  float: right;
-  text-align: right;
-  margin-top: 10px;
-  padding-right: 10px;
-}
-div.menu-movil:hover {
-  cursor: pointer;
-}
-div.menu-movil span {
-  height: 8px;
-  margin-bottom: 6px;
-  background-color: black;
-  display: block;
 }
 @media only screen and (min-width: 768px) {
   nav{

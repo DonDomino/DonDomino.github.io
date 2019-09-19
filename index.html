@@ -4,10 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" integrity="sha256-zmfNZmXoNWBMemUOo1XUGFfc0ihGGLYdgtJS3KCr/l0=" crossorigin="anonymous" />  
-  <link rel="stylesheet" href="./styles.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" integrity="sha256-zmfNZmXoNWBMemUOo1XUGFfc0ihGGLYdgtJS3KCr/l0=" crossorigin="anonymous" />  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
   <title>Landerz</title>
 </head>
 
@@ -15,7 +16,7 @@
 
   <nav>  
     <!-- Hamburger Menu -->
-    <nav class="navbar navbar-light light-blue lighten-4">
+    <nav class="navbar fixed-top navbar-light lighten-4">
       <a class="navbar-brand" href="#"><h4 class="">Landerz<span>.</span></h4></a>
       <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
         data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
@@ -23,7 +24,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent1">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#features">Features</a>
@@ -44,26 +45,28 @@
       </div>
     </nav>
     <!-- Main Nav -->
-    <ul class="nav justify-content-center main-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#home">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#features">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#about">About Us</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#testimonials">Testimonials</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#blog">Blog</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="#contact">Contact</a>
-      </li>
-    </ul>
+    <nav class="fixed-top">
+      <ul class="nav justify-content-center main-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#features">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#testimonials">Testimonials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#blog">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
   </nav>
 
   <h4 class="text-center">Landerz<span>.</span></h4>
@@ -73,7 +76,7 @@
       <div class="hero-right">
         <img class="d-md-none" src="images/landing_1.png" alt="">
       </div>
-      <div class="col-md-3 hero-left">
+      <div class="col-md-3 hero-left animated zoomInLeft">
         <h1>Grow Your Busssines Faster</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro cumque laudantium obcaecati, nisi ipsum sint
           neque, reiciendis dignissimos!</p>
@@ -83,9 +86,9 @@
   </section>
 
   <section id="features" class="container-fluid features">    
-    <h1 class="text-center">Features</h1>
+    <h1 class="text-center wow bounce">Features</h1>
     <div class="row justify-content-center">
-      <div class="card col-md-3 feature-item">
+      <div class="card col-md-3 feature-item wow bounceIn">
         <div class="icon-wrapper">
           <i class="fas fa-sync"></i>
         </div>
@@ -94,7 +97,7 @@
         </p>
         <a href=""><span>Learn More</span></a>
       </div>
-      <div class="card col-md-3 feature-item">
+      <div class="card col-md-3 feature-item wow bounceInLeft">
         <div class="icon-wrapper">
           <i class="fas fa-store-alt"></i>
         </div>
@@ -103,7 +106,7 @@
         </p>
         <a href=""><span>Learn More</span></a>
       </div>
-      <div class="card col-md-3 feature-item">
+      <div class="card col-md-3 feature-item wow bounceInLeft">
         <div class="icon-wrapper">
           <i class="fas fa-shopping-basket"></i>
         </div>
@@ -112,7 +115,7 @@
         </p>
         <a href=""><span>Learn More</span></a>
       </div>
-      <div class="card col-md-3 feature-item">
+      <div class="card col-md-3 feature-item wow bounceInLeft">
         <div class="icon-wrapper">
           <i class="fas fa-flip-horizontal fa-redo-alt"></i>
         </div>
@@ -121,7 +124,7 @@
         </p>
         <a href=""><span>Learn More</span></a>
       </div>
-      <div class="card col-md-3 feature-item">
+      <div class="card col-md-3 feature-item wow bounceInLeft">
         <div class="icon-wrapper">
           <i class="far fa-smile"></i>
         </div>
@@ -130,7 +133,7 @@
         </p>
         <a href=""><span>Learn More</span></a>
       </div>
-      <div class="card col-md-3 feature-item">
+      <div class="card col-md-3 feature-item wow bounceInLeft">
         <div class="icon-wrapper">
           <i class="fas fa-plug"></i>
         </div>
@@ -144,10 +147,10 @@
 
   <section id="prototypes" class="container-fluid prototypes">
     <div class="row justify-content-around align-items-center proto-wrapper">
-      <div class="col-md-7 proto-left">
+      <div class="col-md-7 proto-left wow bounceInDown">
         <img src="./images/do_ui_kit_download_cta_floating_devices-2x.png" alt="">
       </div>
-      <div class="col-md-4 proto-right">
+      <div class="col-md-4 proto-right wow bounceInRight">
         <div class="proto-info">
           <h2>Create interactive prototypes</h2>
           <span>Lorem ipsum dolor sit, adipisicing elit amet adipisicing elit consectetur adipisicing elit. Expedita vel sed repellat veniam, consequatur
@@ -157,7 +160,7 @@
             <p><i class="fas fa-check"></i> Nobis quia veritatis</p>
           </div>
         </div>
-        <div class="container card proto-card">
+        <div class="container card proto-card wow pulse">
           <div class="row align-items-center">
             <img src="./images/person_1.jpg" alt="">
             <div class="name-wrapper">
@@ -175,12 +178,12 @@
   </section>
 
   <section id="about" class="container-fluid about">    
-    <h1 class="text-center">About Us</h1>
+    <h1 class="text-center wow bounce">About Us</h1>
     <div class="row justify-content-around">
-      <div class="col-md-6 text-center about-left">
+      <div class="col-md-6 text-center about-left wow lightSpeedIn">
         <img src="./images/about_1.jpg" alt="">
       </div>
-      <div class="col-md-4 about-right">
+      <div class="col-md-4 about-right wow pulse">
         <h3>Creative interactive prototypes</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque animi natus consequuntur numquam eligendi. Optio id, hic asperiores dolorum, explicabo in corrupti voluptas fuga libero magnam ex recusandae porro quod.</p>
         <button type="button" class="btn">Learn More</button>
@@ -189,8 +192,8 @@
   </section>
 
   <section id="testimonials" class="container-fluid testimonials">
-    <h1 class="text-center">Testimonials</h1>
-    <div class="row justify-content-center slideshow">
+    <h1 class="text-center wow bounce">Testimonials</h1>
+    <div class="row justify-content-center slideshow wow bounceIn">
       <div id="carousel" class="carousel slide col-md-10" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -214,9 +217,9 @@
   </section>
 
   <section id="contact" class="container-fluid contact-form">
-    <h1 class="text-center">Get In Touch</h1>
+    <h1 class="text-center wow bounce">Get In Touch</h1>
     <div class="row justify-content-center">
-      <div class="col-md-8 col-lg-6 col-xl-4 form">
+      <div class="col-md-8 col-lg-6 col-xl-4 form wow rubberBand">
         <h4>Contact Form</h4>
         <form>
           <div class="form-row">
@@ -260,6 +263,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
   <script src="./app.js"></script>
 </body>
 
